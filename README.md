@@ -25,6 +25,6 @@ Cool
 - Set the SMS URL and SMS Fallback URL to the URL of the new heroku app.
 - You're done
 
-You can now what you would to your Heroku app using the CLI but instead by texting the number. Dynosaur works out which app to apply the command to by the friendly name of the Twilio number.
+You can now what you would to your Heroku app using the CLI but instead by texting the number, just omit the 'heroku' you would usually type on the CLI. Dynosaur works out which app to apply the command to by the friendly name of the Twilio number.
 
 
