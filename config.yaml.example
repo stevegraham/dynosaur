@@ -1,3 +1,4 @@
-account_sid: 'xxxxxxxxxxxxxxxxxxxxxxxxx'
-auth_token:  'xxxxxxxxxxxxxxxxxxxxxxxxx'
-
+account_sid:     'xxxxxxxxxxxxxxxxxxxxxxxxx'
+auth_token:      'xxxxxxxxxxxxxxxxxxxxxxxxx'
+heroku_user:     'you@example.com'
+heroku_password: 'secret'
