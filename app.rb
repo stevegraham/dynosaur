@@ -4,7 +4,7 @@ require 'heroku/command'
 require 'twilio-rb'
 require 'yaml'
 
-config = YAML.load_file 'config.yaml'
+config = YAML.load_file './config.yaml'
 
 module Heroku::Helpers
   def display(msg="", newline=true) msg; end
