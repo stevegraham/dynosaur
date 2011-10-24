@@ -1,4 +1,4 @@
-# Scaler
+# Dynosaur
 
 Administer your Heroku app using SMS.
 
