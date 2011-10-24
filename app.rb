@@ -10,6 +10,12 @@ module Heroku::Helpers
   def display(msg="", newline=true) msg; end
 end
 
+Heroku::Auth.instance_eval <<-EOS
+  def client
+    @client ||= Heroku::Client.new("#{config['heroku_user']}", "#{config['heroku_password']}")
+  end
+EOS
+
 Heroku::Command.load
 
 Twilio::Config.setup \
@@ -30,4 +36,5 @@ end
 
 get  '/', &action
 post '/', &action
+
 
