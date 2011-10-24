@@ -8,7 +8,7 @@ You're in the pub with your pals and you get an email from your boss saying your
 
 Easy, send a text
 
-<pre>dynos+10</pre>
+<pre>dynos +10</pre>
 
 __BOSH!__ Put your phone back in your pocket and get yourself a well earned drink my son.
 
