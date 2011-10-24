@@ -8,7 +8,7 @@ You're in the pub with your pals and you get an email from your boss saying your
 
 Easy, send a text
 
-<pre>dynos +10</pre>
+![Scale via SMS](https://github.com/stevegraham/dynosaur/raw/master/photo.jpg)
 
 __BOSH!__ Put your phone back in your pocket and get yourself a well earned drink my son.
 
@@ -26,5 +26,4 @@ Cool
 - You're done
 
 You can now what you would to your Heroku app using the CLI but instead by texting the number, just omit the 'heroku' you would usually type on the CLI. Dynosaur works out which app to apply the command to by the friendly name of the Twilio number.
-
 
