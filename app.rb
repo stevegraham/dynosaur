@@ -16,7 +16,7 @@ Twilio::Config.setup \
   account_sid: config['account_sid'],
   auth_token:  config['auth_token']
 
-get '/' do
+action = -> do
   opts     = params['Body'].split
   command  = opts.shift.strip rescue 'help'
   app_name = Twilio::IncomingPhoneNumber.all(phone_number: params['To']).first.friendly_name
@@ -25,5 +25,9 @@ get '/' do
 
   response = Heroku::Command.run command, opts
 
-  Twilio::TwiML.build { |res| res.sms response }
+  Twilio::TwiML.build { |res| res.sms response[0,160] }
 end
+
+get  '/', &action
+post '/', &action
+
